@@ -1,12 +1,15 @@
 class carrito():
     marca=None
     color=None
-    tipo_llantas=None
+    llantas=None
     tipo=None #Automatico o manual
-    def __init__(self,m,c,t_ll,t):
+    def __init__(self,m,c,t):
         self.marca=m
         self.color=c
-        self.tipo_llantas=t_ll
+        self.llantas=[]
+        for i in range(3):
+            p=llanta("No conosco tipos de llantas xd")
+            self.llantas.append(p)
         self.tipo=t
     def pito(self):
         print("pi pi pi")
@@ -26,10 +29,14 @@ class carrito():
 
 class llanta():
     tipo=None
-    
+    def __init__(self,type):
+        self.tipo=type
+    def sonido_llanta(self):
+        print("Asterisco sonido de llanta asterisco")
+        
 
 
-mi_carrito=carrito(m="Toyota",c="Rojo",t_ll=19,t="Manual")
+mi_carrito=carrito(m="Toyota",c="Rojo",t="Manual")
 mi_carrito.conducir()
 
 
