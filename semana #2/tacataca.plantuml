@@ -1,0 +1,57 @@
+@startuml First 
+
+class Carrito {
+    +string marca
+    +string color
+    +string tipo 
+    void pito()
+    void chocarse()
+    void conducir()
+    void cambiar_Color()
+
+}
+
+class stellaris_crisis {
+    -string tipo
+    +int fecha_Aparicion
+    +int dificultad
+    -int naves_Iniciales
+    -string sistema_De_Aparicion
+    
+    +int get_Tipo()
+    +int get_naves_Iniciales()
+    +int get_sistema_De_Aparicion()
+    +void joder()
+    +void atacar()
+    +void crear_flota()
+}
+
+class How_is_that_pokemon {
+    string clase_Pokemon
+    string tipo_1
+    string tipo_2
+    string Naturaleza
+    int id
+
+    void its_Pikachu()
+    void atacar()
+    void pp()
+}
+
+class personaje_Generico_De_Anime {
+    string color_De_Pelo
+    None personalidad
+    string poder_Pendejo
+    string Nada_porque_es_aburrido
+    string jaja_Que_Pendejo
+
+    void lo_Pisa_Un_Camion()
+    void llora()
+    void pendejo_No_Hace_Nada()
+
+
+
+
+}
+
+@enduml
