@@ -1,0 +1,9 @@
+
+
+public enum tipo {
+    Lacteo,
+    Canasta_Basica,
+    Vegetal,
+    Fruta,
+    Carne,
+}

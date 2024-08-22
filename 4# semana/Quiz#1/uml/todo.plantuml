@@ -1,0 +1,60 @@
+@startuml
+
+enum tipo {
+    Lacteo,
+    Canasta_Basica,
+    Vegetal,
+    Fruta,
+    Carne,
+}
+
+class supermercado{
+    - int id
+    + string nombre
+    + string ubicacio
+    + int numero_Telefono
+    - int numero_Empleados
+    - int inventario_Existencias
+
+    - int comprobar_existencias()
+    - int comprobar_empleados() 
+}
+
+class producto{
+    +int id
+    +string nombre
+    +string marca 
+    +string tipo 
+    +int precio 
+    +int peso 
+
+    - void cambiar_precio()
+    - int pedir_precio()
+
+}
+
+class empleado{
+    +int id
+    +int cedula 
+    +tring nombre 
+    +string ubicacion_hogar
+    +int edad 
+
+    + void trabajar()
+    + int revisar_cedula()
+}
+
+class cliente{
+    +string nombre
+    +int cedula 
+    +producto pedido
+    +int dinero_cliente
+
+    + int pagar_pedido()
+    + void nuevo_pedido()
+
+}
+
+tipo->producto
+
+@enduml
